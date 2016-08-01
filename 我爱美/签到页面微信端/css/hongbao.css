@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#333333;}
+.wrap{
+	min-width:320px;
+	max-width:760px;
+	height:600px;
+	}
+#con{
+	width:100%;
+	margin:0 auto;
+	height:100%;
+	}
+.con_bg{
+	background:url(../images/hongbao.png) no-repeat;
+	height:400px;
+	width:80%;
+	background-size:100%;
+	margin:50px auto 0;
+	text-align:center;
+	}
+.con_bg{
+	color:#fff;
+	font-family:"华文细黑";
+	font-size:20px;
+	padding-top:150px;}
+.button{
+	text-align:center;
+	margin:30% auto 0;
+	height:50px;
+	width:70%;
+	background:#ffcc00;
+	border-radius:10px;
+	}
+.button a{
+	color:#cf262b;
+	line-height:50px;
+	font-family:"华文细黑";
+	font-size:20px;}
+.back{
+	line-height:40px;
+	width:35px;
+	height:35px;
+	border:2px solid #FFF;
+	border-radius:50px;
+	font-family:"华文细黑";
+	font-size:35px;
+	position:absolute;
+	right:10px;
+	top:10px;}

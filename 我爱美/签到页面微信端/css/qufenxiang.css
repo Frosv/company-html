@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+		  background-color:#ff6054;}
+.wrap{
+	overflow:hidden;
+	height:1250px;
+	min-width:320px;
+	max-width:760px;
+	  }
+#con{
+	height:285px;
+	width:100%;}
+.con_bg{
+
+	width:100%;
+	margin:0 auto;}
+.con_bg img{
+	position:relative;
+	z-index:55;
+		display:block;
+	 width:80%;
+	 margin:0 auto;}
+.con_warp{
+	position: relative;
+	z-index:1;
+	top:-90px;
+	width:90%;
+	height:200px;
+	background:#fff8ce;
+	border:5px solid #f44237;
+	border-radius:10px;
+	margin:50px auto 0;}
+.con_bg p{
+	display:block;
+	width:70%;
+	font-family:"华文细黑";
+	font-size:16px;
+	margin:auto;
+	padding-top:10%;
+	color:#ff5f53;}
+.con_foot{
+	display:block;
+	margin:5px auto 0;
+	height:42px;
+	width:100%;
+	padding:10px;
+	}
+.con_foot p{
+	font-family:"华文细黑";
+	font-size:16px;
+	color:#FFF;}
+#foot{
+	width:100%;
+	position: relative;
+	top:80px;
+	}
+.share{
+	width:100%;}
+.share img{margin:0 auto;
+display:block;
+	width:150px;
+	height:53px;}
+.share a{
+	margin-top:35px;
+	margin-left:20px;
+	float:left;
+	display:block;
+	font-size:16px;
+	color:#FFF;
+	border-bottom:1px solid #FFF;
+	font-family:"华文细黑";}
+.fenge img{
+	width:80%;
+	margin:0 auto;}
+.fenge{
+	width:100%;
+	margin:0 auto;}
+.paihang{
+	text-align:center;
+	margin:0 auto 0;
+	width:100%;
+	padding-top:10px;}
+.paihang h2{
+	width:100%;
+	font-family: "华文细黑";
+	font-size:14px;
+	float:left;}
+.paihang h2 span{
+	margin-left:5%;}
+.xingming{
+	margin-left:15%;
+	margin-bottom:10px;
+	font-family:"华文细黑";
+	font-size:16px;
+	color:#666666;}
+.zhuli{
+	width:100%;
+	margin-top:90px;
+	background:#89d8d3;
+	overflow:hidden;}
+.zhuli_bg{
+	height:270px;
+	background:url(../images/zhuli.jpg) no-repeat;
+	background-size:100%;
+	width:100%;
+	margin:0 auto 0;
+	padding-top:30%;}
+.zhuli_con{
+	border-radius:10px;
+	overflow:auto;
+	background:#FFF;
+	width:71%;
+	margin:0 auto 0;}
+.zhuli_bg p{
+	width:100%;
+	display:block;
+	float:left;
+	margin:0 auto 0;
+	color:#94b832;
+	font-family:"华文细黑";
+	font-size:12px;}
+.zhuli_bg span{
+	margin-right:10px;
+	color:#94b832;
+	font-family:"华文细黑";
+	font-size:12px;
+	display:block;
+	float:right;}
+.fenge2{
+	width:100%;
+	margin:0 auto;}
+.fenge2 img{
+	width:100%;
+	margin:0 auto;}
+.zhuli_con_foot p{
+	margin:0px;
+	font-family:"华文细黑";
+	font-size:14px;
+	color:#f74813;
+	}
+.guanzhu_bg{
+	margin:0 auto;
+	background:url(../images/fenxiang_foot.jpg) no-repeat;
+	background-size:100%;
+	width:100%;}
+.guanzhu_bg p{
+	display:block;
+	width:100%;
+	margin-top:50%;
+	margin-left:10%;
+	font-family:"华文细黑";
+	font-size:14px;
+	color:#FFF;
+	}
+.guanzhu_bg p a{
+	color:#FFF;
+	border-bottom:1px solid #FFF;}
+.top_l{
+	float:left;
+	margin:20px 0 0 20px;}
+.top_r{
+	float:right;
+	margin:20px 20px 0 0;}
+.zhulibutton{
+	height:30%;
+	width:100%;
+	}
+.zhulibutton img{
+	display:block;
+	margin:45px auto 0;
+	width:100px;}
+.guanzhu_img{
+	text-align:center;
+	margin:0 auto;
+	width:100%;}
+.guanzhu_img img{
+	padding-left:20px;
+	margin:30px auto 0;
+	height:120px;}

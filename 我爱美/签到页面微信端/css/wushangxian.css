@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{
+	overflow:hidden;
+	 height:1136px;
+	 width:100%;
+	  background-color:#ff6054;
+	  }
+.zt{
+	height:40px; 
+	background-color:#000;
+	}
+.nav{
+	height:88px; 
+	background-color:#281b1f;
+	text-align:center;
+	}
+.nav a{
+	font-size:34px;
+	color:#FFF;
+	line-height:85px;
+	font-family:"华文细黑"；
+	}
+#top{
+	height:75px;
+	background-color:#e4393c;
+	text-align:center;
+	}
+#top a{
+	font-size:26px;
+	font-family:"华文细黑";
+	color:#FFF;
+	line-height:70px;}
+#con{
+	height:944px;
+	width:640px;
+	background:url(../images/qianghongbao.JPG) no-repeat;
+	margin:0 auto;}
+#foot{
+	height:170px;
+	width:640px;
+	position: relative;
+	top:800px;}
+.share img{
+	cursor: pointer;
+	float:left;
+	width:294px;
+	height:83px;
+	margin-left:150px;}
+.share a{
+	margin-top:35px;
+	margin-left:20px;
+	float:left;
+	display:block;
+	font-size:24px;
+	color:#f65250;
+	border-bottom:1px solid #f65250;
+	font-family:"华文细黑";}
+.top_l{
+	float:left;
+	margin:10px 0 0 20px;}
+.top_r{
+	float:right;
+	margin:20px 20px 0 0;}

@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{
+	width:1210px;
+	margin:0 auto;
+	background:#CCC;}
+#con{
+	height:873px;
+	width:100%;
+	background:#fff8ce;}
+.con_header{
+	font-family:"华文细黑";
+	font-size:24px;
+	height:60px;
+	width:100%;
+	overflow:hidden;}
+.con_header p{
+	float:left;
+	margin-top:15px;
+	margin-left:80px;
+	}
+.con_header span{
+	float:left;
+	width:100px;
+	display:block;
+	margin-top:15px;
+	color:#fe6560;
+	border-bottom:1px solid #fe6560;}
+.con_month{
+	height:550px;
+	width:1060px;
+	background: #FFF;
+	margin:0 auto;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;}
+.con_month_top{
+	width:100%;
+	background:#fe6560;
+	height:50px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	}
+.con_month_con{
+	border:1px solid #CCC;
+	height:498px;}
+.con_month_con_left{
+	position:relative;
+	float:left;
+	width:358px;
+	height:500px;
+	border-right:1px solid #CCC;}
+.con_month_con_left{
+	}
+.xiaoren{
+	width:100px;
+	position:relative;
+	z-index:1;
+	top:20px;
+	left:110px;}
+.qiandao{
+	cursor: pointer;
+	position: absolute;
+	z-index:2;
+	top:128px;
+	left:110px;}
+.wushangxian{
+	margin-top:150px;
+	margin-left:90px;
+	cursor:pointer;}
+.chakan{
+	cursor:pointer;
+	margin-left:90px;}
+.con_month_con_right tr td{
+	width:100px;}
+.con_month_con_right tr td a{
+	font-size:20px;
+	position: relative;
+	top:-35px;
+	left:5px;
+}
+.con_month_con_left p{
+	text-align:center;
+	font-family:"华文细黑";
+	font-size:24px;
+	margin-left:50px;}
+.con_foot p{
+	float:left;
+	font-family:"华文细黑";
+	font-size:24px;
+	color:#fe6560;
+	line-height:40px;
+	margin-left:-355px;
+	}
+.con_foot span{
+	float:left;
+	position: relative;
+	}
+.qianbao{
+	float:right;
+	margin-right:50px;}
+

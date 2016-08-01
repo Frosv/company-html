@@ -1,0 +1,56 @@
+
+ul,li{list-style:none;}
+
+#tab{position:relative;
+background:#f44237;
+height:600px;
+width:90%;
+border-radius:5px;
+margin:10px auto;
+overflow:hidden;}
+#tab .tabList ul{
+	display:block;
+	margin-left:40%;
+	margin-top:10px;}
+#tab .tabList ul li{
+	font-family:"华文细黑";
+	font-size:14px;
+	color:#FFF;
+	height:37px;
+	border-radius:10px;
+	float:left;
+	background:#dc537e;
+	border:2px solid #fff8ce;
+	padding:5px 0;
+	text-align:center;
+	margin-left:-1px;
+	position:relative;
+	cursor:pointer;
+	width:35px;
+}
+#tab .tabCon{
+	position:absolute;
+	top:40px;
+	width:100%;
+}
+#tab .tabCon div{
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+#tab .tabCon div ul li.frist{margin-top:-9px; color:#907c41;}
+#tab .tabCon div ul li{
+	height:30px;
+	display:block;
+	font-family:"华文细黑";
+	font-size:12px;
+	}
+#tab .tabList li.cur{
+	color:#dc537e;
+	background:#fff8ce;
+	border-radius:10px;
+	border-bottom:none;
+}
+#tab .tabCon div.cur{
+	opacity:1;
+	filter:alpha(opacity=100);
+}

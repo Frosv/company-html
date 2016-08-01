@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	  background-color:#ff6054;
+	}
+.wrap{
+	width:100%;
+	overflow:hidden;
+	  background-color:#ff6054;
+	  }
+#tab img{
+	height:30px;
+	float:left;
+	margin:10px 0 0 10%;}
+.button{
+	background:#ff5f53;
+	width:100%;
+	margin:0 auto;
+	height:50px;}
+.button img{
+	float:left;
+	width:120px;
+	height:40px;
+	margin-left:20%;}
+.button p a{
+	text-align:center;
+	display:block;
+	float:left;
+	margin-top:10px;
+	margin-left:10px;
+	width:80px;
+	color:#FFF;
+	border-bottom:1px solid #FFF;
+	font-size:14px;
+	font-family:"华文细黑";
+	}
+.gdwz{
+	font-size:16px;
+	line-height:20px;
+	color:#FFF;
+	font-family:"华文细黑";}
+.gdwz img {
+	height:30px;
+	margin-top:10px;}
+.gdwz a{
+	position:relative;
+	top:-10px;
+	margin-left:15px;}
+.top_l{
+	float:left;
+	margin:10px 0 0 20px;}
+.top_r{
+	float:right;
+	margin:20px 20px 0 0;}
+#foot{
+	margin:10px auto 0;
+	height:100%;
+	width:100%;}
+#foot img{
+	width:100%;}
+table tr:nth-child(odd){background:#fff8ce;}
+.biaoge{
+	text-align:center;
+	background:#FFF;
+	width:90%;
+	position:absolute;	}
+.biaoge_bg{
+	width:90%;
+	margin:0 auto;
+	background:#fff8ce;}
+tbody tr td{
+	font-family:"华文细黑";
+	height:30px;
+	border-left:0px;
+	border-right:0px;}

@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	  background-color:#ff6054;}
+.wrap{
+	height:100%;
+	overflow:hidden;
+	  width:100%;
+	  }
+#top{
+	height:40px;
+	background-color:#e4393c;
+	text-align:center;
+	}
+#top a{
+	font-size:16px;
+	font-family:"华文细黑";
+	color:#FFF;
+	line-height:70px;}
+.con_bg{
+	min-width:320px;
+	max-width:760px;
+	margin:20px auto 0;
+	height:450px;
+	width:100%;
+	border-radius:10px;
+	background-color:#755860;
+	overflow:hidden;}
+.con_top_l{
+	margin-left:10px;
+	float:left;
+	width:200px;
+	height:40px;
+	background-color:#81686f;
+	}
+.con_top{
+	height:50px;
+	width:300px;
+	margin:20px auto 0px;}
+.con_top_r{
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	height:40px;
+	width:90px;
+	background:#907c82;
+	float:left;
+	text-align:center;
+	overflow:hidden;}
+.con_top_r a{
+	font-size:16px;
+	font-family:"幼圆";
+	line-height:40px;
+	color:#FFF;}
+.con_foot{
+	display:block;
+	margin:5px auto 0;
+	height:42px;
+	width:300px;
+	}
+.con_foot p{
+	font-family:"华文细黑";
+	font-size:12px;
+	color:#FFF;}
+.day{
+	margin:0 auto;
+	height:90px;
+	width:290px;
+}
+.dayicon{
+	float:left;
+	margin-top:20px;}
+.dayicon img{
+	height:10px;
+	float:left;
+	margin-top:5px;}
+.dayicon a{
+	float:left;
+	color:#FFF;
+	font-size:14px;
+	margin-left:10px;}
+.dayicon p{
+	color:#FFF;
+	display:block;
+	float:left;
+	margin-left:10px;
+	border-bottom:1px solid #FFF;}
+.sign_bg{
+	cursor: pointer;
+	float:right;}
+.sign_bg a img{
+	height:40px;}
+.day_bg{
+	background-color:#FFF;
+	width:294px;
+	margin-top:10px;
+	}
+.day_bg_bo{
+	position:relative;
+	top:-3px;
+	height:10px;}
+.day_bg_bo img{
+	width:295px;}
+.day_bg_top{
+	height:40px;
+	background-color:#f4e6ea;}
+.day_bg_top ul li{
+	float:left;
+	display:block;
+	width:42px;
+	text-align:center;
+	font-size:20px;
+	color:#ff938b;
+	line-height:40px;}
+.day_con{
+	width:294px;
+	overflow:hidden;
+		}
+.day_con li{
+	background-position:center;
+	border:1px solid #e5e5e5;
+	display:block;
+	width:40px;
+	height:40px;
+	float:left;
+	}
+#foot{
+	background:url(../images/cat.PNG) no-repeat;
+	background-size:100%;
+	width:100%;
+	height:80px;}
+.foot_bg{
+	margin:0 auto;
+	padding-top:30px;
+	width:300px;}
+.button{
+	background:url(../images/foot_bu.png) no-repeat;
+	background-size:100%;
+	height:50px;
+	width:100px;
+	float:left;
+	margin-left:10%;
+	text-align:center;}
+.button a{
+	font-family:"华文细黑";
+	color:#5b494e;
+	font-size:14px;
+	line-height:25px;}
+.top_l{
+	float:left;
+	margin:10px 0 0 20px;}
+.top_r{
+	float:right;
+	margin:20px 20px 0 0;}

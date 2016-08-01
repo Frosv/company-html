@@ -1,0 +1,268 @@
+@charset "utf-8";
+/* CSS Document */
+#banner {
+	position:absolute;
+	top:0px;
+	z-index:1px;
+	}
+#banner a img{
+	text-align:center;
+	height:100%;
+	width:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;}
+#zedang{
+	position:absolute;
+	top:535px;}
+#con{
+	width:100%;
+	padding-top:610px;
+	position: absolute;
+	z-index:10;}
+#warpcon{
+	margin:0px auto;
+	width:1100px;
+	height:1842px;
+	}
+#left{
+	display:block;
+	float:left;
+	width:677px;
+	overflow:hidden;}
+.l_btn{
+	display:block;
+	width:677px;
+	height:90px;
+	background-image:url(../img/l_btn.jpg);
+	}
+.l_btn a{ float:left; height:90px; background:url(about:blank);}
+.l_btn a.l_btn_a1{
+	width:226px;}
+.l_btn a.l_btn_b2{
+	width:225px;}
+.l_btn a.l_btn_c3{
+	width:225px;}
+.l_btn a.l_btn_a1:hover{
+	background:url(../img/l_btn.jpg) 0 -90px no-repeat;}
+.l_btn a.l_btn_b2:hover{
+	background:url(../img/l_btn.jpg) -226px -90px no-repeat;}
+.l_btn a.l_btn_c3:hover{
+	background:url(../img/l_btn.jpg) -451px -90px no-repeat;}
+.act_t{
+	height:75px;
+	width:667px;
+	text-align:left;}
+.act_con{
+	width:675px;
+	height:372px;
+	border:1px solid #000000;
+	}
+.act_con ul{ text-align:center;
+padding:10px 8px 0px 8px;
+	}
+.act_con ul li{
+	display:block;
+	height:175px;
+	width:215px;
+	margin:5px 2px 0px 2px;
+	float:left;
+	font-size:14px;}
+.act_con ul li img:hover{}
+.act_con ul li a{
+	line-height:25px;
+	color:#FFF;
+}
+.act_con ul li a:hover{
+	color: #F30;
+	}
+.his_t{
+	height:67px;
+	width:667px;
+	text-align:left;}
+.his_con{
+	width:675px;
+	height:200px;
+	border:1px solid #000000;
+	}
+.his_con ul{ text-align:center;
+padding:10px 8px 0px 8px;}
+.his_con ul li{
+	display:block;
+	height:175px;
+	width:215px;
+	float:left;
+	font-size:14px;	
+	margin:10px 2px 0px 2px;}
+.his_con ul li a{
+	color:#FFF;
+	line-height:30px;
+}
+.his_con ul li a:hover{
+	color: #F30;
+	}
+.news_t{
+	height:65px;
+	width:667px;
+	text-align:left;}
+#news_con{
+	width:675px;
+	height:956px;
+	border:1px solid #000000;
+	}
+#news_con .li_bg_true{
+	width:125px;
+	height:40px;}
+.list_arrow_1{
+	width:633px;
+	height:860px;
+	margin:0px 20px;
+	border:1px solid #000;
+	}
+.list_arrow_1 ul li{
+	display:block;
+	height:160px;}
+.list_arrow_1 ul li a img{
+	float:left;
+	width:212px;
+	height:141px;}
+.list_arrow_1 ul li h2{
+	font-size:14px;
+	margin:10px 0px 0px 220px;
+	color:#FFF;
+	}
+.list_arrow_1 ul li h3{
+	display:block;
+	margin:10px 0px 0px 220px;
+	font-size:12px;
+	color:#CCC;
+	}
+.list_arrow_1 ul li h4{
+	display:block;
+	margin:60px 0px 10px 220px;
+	font-size:12px;
+	color:#CCC;
+	}
+#news_nav{
+	position:relative; 
+	width:100%;
+	}
+#news_nav {
+	margin:10px 20px;
+	width:635PX;
+	overflow:hidden;
+	}
+#news_nav  li{
+	display:inline;
+
+}
+#news_nav  li :hover a{
+	background:#F60;
+}
+#news_nav  li a{
+	transition:all 0.8s;
+	animation:light 3s infinite;
+	color:#FFF;
+	display:inline;
+	text-align:center;
+	width:125px;
+	height:40px;
+	float:left;
+	border:1px solid #000;
+	font-size:14px;
+	line-height:40px !important;}
+#news_nav  li a:hover{
+	color: #F60;
+	}
+#right{
+	float:right;
+	width:406px;
+	height:1830px;
+	overflow:hidden;}
+.img_box{
+	width:398px;
+	background-color:#000;
+	height:806px;
+	border:4px  solid #000;}
+.img_box a{ line-height:0px!important;
+display:block;
+margin-top:1px;}
+.r_img_a1{
+	display:block;
+	}
+.r_img_s1{
+	height:90px;}
+.r_img_s2{
+	height:90px;
+	margin-top:0px;}
+.lishi_t{
+	width:406px;
+	height:65px;
+	overflow:hidden;
+	}
+.lishi_con{
+	position:relative;
+	width:406px;
+	height:186px;
+	background-color:#333;}
+.zhiyin_t{
+	width:406px;
+	height:67px;
+	overflow:hidden;
+}
+.zhiyin_con{
+	overflow:hidden;
+	width:406px;
+	height:99px;
+	background-color:#666;
+	}
+.kefu_t{
+	height:60px;
+	width:406px;
+	overflow:hidden;
+	}
+.kefu_con{
+	height:537px;
+	width:404px;
+	border:1px solid #000;
+	overflow:hidden;}
+.kefu_con h1{
+	font-size:14px;
+	display:block;
+	height:30px;
+	text-align:center;
+	line-height:40px;
+	color:#FFF;}
+.kefu_con ul{
+	width:380px;
+	margin:10px 30px;
+	height:480px;
+	overflow:hidden;}
+.kefu_con ul li{
+	display:block;
+	height:30px;}
+.kefu_con ul li a{
+	font-size:12px;
+	color:#FFF;}
+.kefu_con ul li a:hover{
+	color:#F30;}
+.lishi_con{
+	text-align:center;
+	overflow:hidden;}
+.lishi_c{
+	padding-top:25px;}
+.lishi_2{
+	position:absolute;
+	left:-125px;}
+.lishi_3{
+	position:absolute;
+	right:-125px;}
+.leftbutton{
+	position: absolute;
+	top:25px;
+	}
+.rifhtbutton{
+	position: absolute;
+	top:25px;
+	right:0px;
+	}

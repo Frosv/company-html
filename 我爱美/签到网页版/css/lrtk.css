@@ -1,0 +1,73 @@
+
+ul,li{list-style:none;}
+
+#tab{position:relative;
+float:left;
+height:858px;
+border-radius:5px;
+overflow:hidden;
+}
+#tab img{
+	display:block;
+	margin:15px 0 0 10px; 
+	float:left;}
+#tab .tabList ul{
+	display:block;
+	margin-left:296px;
+	margin-top:20px;}
+#tab .tabList ul li{
+	font-family:"华文细黑";
+	font-size:24px;
+	color:#FFF;
+	height:37px;
+	border-radius:10px;
+	float:left;
+	background:#dc537e;
+	border:2px solid #fff8ce;
+	padding:5px 0;
+	width:117px;
+	text-align:center;
+	margin-left:-1px;
+	position:relative;
+	cursor:pointer;
+}
+#tab .tabCon{
+	background:url(../images/paihang_bg.png) no-repeat;
+	position:absolute;
+	top:63px;
+	left:-1px;
+	border-top:none;
+	width:760px;
+	height:813px;
+	margin-left:20px;
+}
+#tab .tabCon div{
+	margin-top:15px;
+	padding:10px;
+	position:absolute;
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+#tab .tabCon div ul{
+	margin-left:50px;
+	width:130px;
+	float:left;
+	text-align:center;}
+#tab .tabCon div ul li.frist{margin-top:-9px; color:#907c41;}
+#tab .tabCon div ul li{
+	line-height:50px;
+	height:50px;
+	display:block;
+	font-family:"华文细黑";
+	font-size:24px;
+	}
+#tab .tabList li.cur{
+	color:#dc537e;
+	background:#fff8ce;
+	border-radius:10px;
+	border-bottom:none;
+}
+#tab .tabCon div.cur{
+	opacity:1;
+	filter:alpha(opacity=100);
+}
