@@ -1,0 +1,752 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="jquery.js"></script>
+<style>
+
+/**/
+*{margin:0px;padding:0px;}
+
+input{margin:0px; padding:0px; height:23px;border:solid 1px #ccc;margin-right:-1px; margin-top:1px; outline:none;}
+.over{overflow:hidden;}
+ul{ list-style:none;}
+a{ text-decoration:none; color:#999; padding:0px; font-family:"微软雅黑"; font-weight:bold; font-size:14px; margin:0px}
+.topbox{ background-color:#FFF;}
+.top{width:1000px; margin:0 auto;}
+.logo{ margin-top:60px;float:left;  }
+
+.smallnav1{
+	
+	color: #999;
+	float:right;
+	margin-top:53px;
+	
+	
+	
+}
+
+.logo2{float:right;margin-top:20px; margin-bottom:27px; clear:right;}
+	
+.topnavbox{ background-color:#ff8900; }
+.topnav{ width:1000px; margin:0 auto; }
+.topnav a{ float:left;  display:block; line-height:50px; padding-left:29px; padding-right:29px; color:white;}
+.topnav a:hover{ background-color:#C44000;}
+
+.bannerbox{ height:550px; overflow:hidden; position:relative;
+   border-bottom:solid 2px #ff8900;}
+  .bannerbox .photo{ position:absolute; left:50%; margin-left:-960px; top:50%; top:-400px;border:solid 5px #F60;} 
+ .banner001{
+	width: 1000px;
+	position:relative;
+	margin:0 auto;
+}
+
+
+.bannerright {
+	width: 306px;
+	height: 260px;
+	position: absolute;
+	top: 89px;
+	left: 685px;
+	background-image: url(image/bannerright.png);
+	z-index: 2;
+}
+.bannerright h1{ font-family:"迷你简菱心"; color:#ff8900; margin-left:62px; margin-top:45px;}
+.bannerright ul{margin-left:62px; margin-top:20px; color:#ff5940;  font-family:"微软雅黑"; font-size:10px; font-weight:bold;}
+.bannerright li{margin-top:19px;}
+.bannerright li img{margin-right:5px; padding-left:5px;}
+
+
+.point{
+	position: absolute;
+	left: 728px;
+	bottom: -126px;
+	margin-left: -180px;
+}
+.point  a{padding-left:30px; }
+
+.smallnav{width:1000px; margin:0 auto;}
+
+.sousuo1 { color: #333; float:left; line-height:69px; font-family:"微软雅黑"; font-weight:bold;}
+.sousuo1 a{ margin-left:20px;}
+.sousuo2{ float:right;margin-top:21px;}
+.sousuo2 input{float:left;}
+.sousuo2 img{float:right;margin-top:1px;}
+.string1{width:1000px; height:1px; background-color:#999;
+margin:0 auto;}
+
+.qtgy{margin:0 auto; margin-top:60px; font-size:41px; color:#ff8900;width:336px;}
+.breakfast{width:238px; height:344px;background-color:white;float:left;margin-left:4px; border:solid 1px #ccc;}
+.breakfast .breakfast1{width:223px;height:155px; background-color:#F00;margin:0px auto; margin-top:6px; background-image: url(image/zc.png)}
+
+
+ .breakfast5{width:223px;height:155px; background-color:#F00;margin:0px auto; margin-top:6px; background-image: url(image/wc2.png)}
+ 
+ 
+  .breakfast3{width:223px;height:155px; background-color:#F00;margin:0px auto; margin-top:6px; background-image: url(image/wc.png)}
+  
+  
+   .breakfast4{width:223px;height:155px; background-color:#F00;margin:0px auto; margin-top:6px; background-image: url(image/yexiao.png)}
+   
+   
+   
+.breakfast2{width:238px; height:344px;background-color: #ff8900;float:left;margin-left:4px; color:white;}
+.cense{background-color: #ff8900;}
+.zzw1{width:996px;height:345px;margin:0px auto;margin-top:44px;}
+
+.breakfastbutton{width:140px;height:30px;  margin:12px auto; background-image:url(image/lookmore2.png)}
+.breakfastbutton2{background-image: url(image/lookmore.png);}
+.textp{  color:white; }
+.text1p{ font-family:"微软雅黑"; font-size:11px; padding-top:13px; padding-left:14px; color: #333; line-height:30px; padding-right:14px;}.text1h1{ font-family:"微软雅黑"; font-size:25px; margin-top:14px;margin-left:11px; font-weight:bold; text-align:center; color: #ff8900;}
+
+.white{color:white;}
+
+
+.string2{ height:3px; background-color:#ff8900; margin-top:20px; margin-bottom:20px;}
+
+.banner{height:332px; position:relative; margin-top:113px; overflow:hidden; }
+.banner img{ position:absolute; left:50%; margin-left:-950px;}
+
+.sixreason{ background-image:url(image/six%20reason.png); margin-top:134px; width:1000px; margin:0 auto; height:105px;}
+.one{ float:left; margin:20px;margin-top:60px; margin-left:0px;}
+.onebox{width:1000px; margin:0 auto; overflow:hidden;}
+.one img{float:left;}
+.oneright img{float:left;}
+.one p{ float:left; font-size:12px; font-family:"微软雅黑"; line-height:26px;}
+.one1{width:257px; height:184px;float:left; margin-left:22px;}
+.one h1{ font-size:16px; color:red; font-family:"微软雅黑"; font-weight:bold; clear:left; padding-top:16px;}
+.one1 img{float:left;}
+.oneright{ float:right; margin:20px;margin-top:60px; margin-right:0px;}
+.oneright p{ float:left; font-size:12px; font-family:"微软雅黑"; line-height:26px;}
+.oneright h1{ font-size:16px; color:red; font-family:"微软雅黑"; font-weight:bold; clear:left; padding-top:16px;}
+
+
+.zzyzlbox{ background-color:#f6f6f6;}
+.zzyzl{width:1000px; margin:0 auto; overflow:hidden; }
+.zzyzl3{width:1000px; margin:0 auto;  }
+.zzyzl2{width:689px; float:left; margin-bottom:5px; }
+
+ .img1{float:left;margin-top:55px; cursor:pointer; width:26px; height:42px;background-image: url(image/nozzyzlleft.png)}
+ .img2{float:left; overflow:hidden; width:928px; }
+ .img2d{width:1392px; height:188px;}
+ .img3{float:right;margin-top:55px;cursor:pointer;width:26px; height:42px; background-image: url(image/nozzyzlright.png)}
+ .zzyzl5{ background-image:url(image/zzyzlright.png)}
+ .zzyzl4{background-image:url(image/zzyzlleft.png)}
+ .img2 img{float:left;  margin-left:20px;}
+.zzyzl hearder2{float:left; height:104px; width:1000px;}
+.zzyzl3 hearder2{ffloat:left; height:104px; width:1000px;}
+.hearder4{ float:left; width:686px; overflow:hidden;margin-bottom:8px;}
+.hearderbottom{ width:1000px; margin:0 auto;margin-top:0px;}
+.zzyzl hearder2 img{float:right; margin-top:60px;}
+.zzyzl a{ display:inline;  font-size:16px; font-family:"微软雅黑"; font-weight:bold; clear:left; padding-top:16px;color:#ff8900;float:left; padding-left:10px;}
+.zzyzl3 a{ display:inline;  font-size:16px; font-family:"微软雅黑"; font-weight:bold; clear:left; padding-top:16px;color:#ff8900;float:left; padding-left:10px;}
+.zzyz3 hearder2 img{float:right; margin-top:60px;}
+.more a{ font-size:12px;  font-family:"微软雅黑"; font-weight:bold; clear:left; padding-top:20px;color:#ff8900;float:right;}
+.more{margin:0px;  float:right;}
+
+.more1 a{ font-size:12px;  font-family:"微软雅黑"; font-weight:bold; clear:left; color:#ff8900;}
+.more2 a{ font-size:12px;  font-family:"微软雅黑"; font-weight:bold; clear:left; color:#ff8900;}
+.more1{   float:right; width:90px;}
+.more2{   float:right; width:90px; }
+.zzyzl p{margin:0px; padding:0px; width:600px; float:left; margin-top:25px;margin-left:8px; color: #CCC; font-size:10px; font-family:Arial;}
+
+.zzyzl3 p{margin:0px; padding:0px; width:600px; float:left; margin-top:25px;margin-left:8px; color: #CCC; font-size:10px; font-family:Arial;}
+
+.zzyzl1{width:1000px; margin:0px auto; overflow:hidden;padding-top:50px; padding-bottom:32px;}
+
+.mdzsbox{background-color:white;}
+.mdzs2{ width:477px; height:143px;float:left;margin-top:30px; margin-right:20px}
+
+.mdzstext{ width:255px; height:143px; float:right;}
+.mdzstext h1{ font-size:14px; font-family:"微软雅黑"; color:#333; margin-top:5px; font-weight:bold;}
+.mdzstext p{font-size:12px; font-family:"宋体"; color:#666666;padding-top:10px; line-height:25px;}
+.mdzstext a{color: #666; float:left; margin-top:8px;}
+.mdzstext a:hover{color:#a30810; float:left; margin-top:8px;}
+.mdzs{width:1000px; height:340px; margin:0px auto;}
+.mdzsheader{width:1000px; height:58px;border:solid 2px red; margin:60px auto;}
+.mdzs1{ width:466px; height:143px; margin:10px; background-color:#F00;float:left;}
+.banner2{ height:200px; position:relative; margin-top:65px; width:1700; overflow:hidden;}
+.banner2text{
+	position: absolute;
+	left: 169px;
+	top: 58px;
+	margin: 0 auto;
+}
+.banner1{ height:200px; background-color:#0F0;margin:0px auto;overflow:hidden;}
+.aboutusbox{width:1000px;  margin:0 auto; }
+
+.aboutus{width:1000px;  margin:0 auto; overflow:hidden; margin-top:40px;}
+.aboutus img{float:left;}
+.aboutus .wenzi{ width:360px; height:196px; float:left; margin-left:35px; padding-bottom:20px;}
+
+.wenzi h2{ font-size:17px; font-family:"黑体";font-weight:bold; color: #323232;}
+
+.wenzi p{margin-top:22px; font-size:12px; font-family: "宋体";color: #646464; line-height:25px;}
+
+.wenzi a{ font-size:12px; color:#9c000b; margin-top:42px;; display:block; font-family:"宋体"; font-weight: normal;}
+
+.hearder3{float:left;  width:693px; }
+.hearder3 p{width:200px;}
+.hearder3 a{  display:block; padding-left:10px;}
+
+.wenzi2{ width:676px; overflow:hidden; float:left; margin-top:58px; padding-bottom:2px;}
+
+.wenzi2box{width:300px; height:23px; background-image:url(image/wenzi1box.png); background-repeat:no-repeat; background-position: left center; padding:6px;}
+.wenzi3box{ background-image:url(image/wenzi1boxhover.png);}
+.wenzi2box a{padding-left:10px; line-height:23px; font-size:12px; font-family: "宋体";color: #646464;  font-weight:normal;}
+.weizi2boximg{ background-image: url(image/aboutusxianhover.png);width:302px;height:3px; margin-top:5px; }
+
+.wenzi2box a:hover { color: #930000;}
+.wenzileft{width:308px; float:left;}
+.wenziright{width:308px; float:right; margin-right:6px;}
+.aboutusright{width:247px; height:406px; float:right;}
+.aboutusright .q1{ width:247; text-align:center;margin:0 auto;}
+.q1 p{text-align:center; line-height:23px; font-size:12px; font-family: "宋体";color: #646464;  font-weight:normal; }
+.aboutusright img{ display:block;  margin:6px auto; float:none;}
+
+.aboutusleft{float:left; overflow:hidden; width:715px;}
+.qyexiangce{width:247px;  float:right;marigin-bottom:50px;}
+.qyexiangce span{ display:block;  font-size:16px; font-family:"微软雅黑"; font-weight:bold; clear:left; padding-top:12px;color:#ff8900;float:left; padding-left:10px; font-weight:bold;margin-left:5px;  }
+.qyexiangce img{ margin-top:11px;}
+.duoc{ width:247px;}
+.newbox{ width:1000px; margin:0 auto; overflow:hidden;}
+.new{float:left; margin-top:40px; width:700px;}
+
+.newbox img{float:left;}
+.newtxt{float:right; width:300px; height:36.5px;background-image:url(image/newjiantou.png);
+background-position:left center; background-repeat:no-repeat; margin-right:15px;}
+
+.newtxt1{ background-image:url(image/newjiantoured.png)}
+.newtxt p{ font-family:"微软雅黑";font-size:14px; color: #666;; line-height:36.5px; padding-left:15px; font-weight:normal; }
+.newtxt p:hover{ color: #800000;}
+.newtxt p:hover .newtxt{ background-image:url(image/newjiantoured.png);}
+.newtxt img{float:left; margin-top:15px;}
+.newright{float:right; margin-top:40px;}
+.gelogo{ width:1000px; margin:0 auto;margin-top:40px;}
+.gelogo a{float:left; margin-right:16.3px;}
+.bottomnavbox{ background-color:#ff8900; margin-top:50px;}
+.bottomnav{width:1000px; margin:0 auto; color:white; height:40px; text-align:center;}
+.bottomnav a{line-height:40px; color:white; font-family: "微软雅黑";padding-top:20px; padding-bottom:20px;padding-left:8px;
+padding-right:8px;}
+
+.bottomnav a:hover{ background-color:#B05800;}
+
+
+.jiaozhu{ width:1000px; margin:0 auto; margin-top:40px; height:150px;}
+.bottomnav a:hover{ background-color:#B05800;}
+.jiaozhu img{float:left; margin-top:20px; display:block;}
+.xsh{width:228px; height:106px;float:left;margin-left:70px;line-height:20px; font-family: "微软雅黑"; color:#666;font-size:14px; margin-top:20px;}
+.twoweima{float:right; margin-top:-20px;}
+</style>
+
+</head>
+
+<body onLoad="MM_preloadImages('image/yellow point.png')">
+
+<div class="topbox">
+	<div class="top over">
+	<div class="logo"><img src="image/logo.png" width="296" height="86"  alt=""/></div>
+    <div class="smallnav1">
+    <a href="#">设为首页</a>&nbsp;|
+    <a href="#">收藏本站</a>&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+    <a href="#">中文</a>&nbsp;|
+    <a href="#">英文</a></div>
+    
+    <div class="logo2"><img src="image/phone.png" width="247" height="58"  alt=""/></div>
+    
+    
+    </div>
+</div>
+<div class="topnavbox">
+	<div class="topnav over">
+    	 <a style="background-color:#C44000;"href="index.html">首页</a>
+          <a href="aboutus.html">关于我们</a>
+            <a href="informationcenter.html">资讯中心</a>
+            <a href="storedisplay.html">门店展示</a>
+            <a href="investmentcooperation.html">招聘合作</a>
+            <a href="foodappreciation.html">美食欣赏</a>
+            <a href="customerservice.html">顾客服务</a>
+            <a href="talentrecruitment.html">人力招聘</a>
+            <a href="contactus.html">联系我们</a>
+  </div>           
+</div>
+
+<div class="bannerbox">
+<div class="point">
+<a href="#" class="yellow"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','image/yellow point.png',1)"><img src="image/point.png" alt="" width="25" height="25" id="Image10"></a>
+<a href="#"><img src="image/point.png" width="25" height="25"  alt=""/></a>
+<a href="#"><img src="image/point.png" width="25" height="25"  alt=""/></a>
+</div>
+<div class="banner001">
+<div class="bannerright">
+<h1>秋水快餐</h1><ul>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>不断的努力创造新的菜式</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>安全好吃的保障</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>诱惑力的菜肴</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>努力向上的年轻团队</li>
+</ul></div>
+</div>
+
+<div class="photo"><img src="image/138-14092ZU049.jpg" width="1920" height="1200"  alt=""/></div>
+
+
+</div>
+
+
+
+
+<div class="smallnav over">
+  <div class="sousuo1">热门搜索：<a href="#"> 原蛊套餐</a>
+  <a href="#">阳光早餐</a>
+ <a href="#">魅力下午</a> <a href="#">深情夜晚</a> <a href="#">原蛊珍汤</a> <a href="#">活力早餐等</a></div>
+ 
+<div class="sousuo2"> <input>
+  <img src="image/sousuo2.png" width="34" height="25"  alt=""/></div>
+
+</div>
+<div class="string1"></div>
+
+<div class="qtgy">○&nbsp;&nbsp;全天供应&nbsp;&nbsp;○</div>
+<div class="zzw1">
+
+  <a href="foodappreciation.html"><div class="breakfast">
+    <div class="breakfast1"></div>
+    <div class="text1">
+    <div class="text1h1">早餐</div>
+    <div class="text1p">有各种类型，均衡饮食，早餐吸收率高，营养全面，议一定要吃早餐
+      </div>
+    
+    </div>
+    <div class="breakfastbutton"></div>
+    </div></a>
+ <a href="foodappreciation.html"><div class="breakfast">
+    <div class="breakfast5">
+    </div>
+    <div class="text1">
+    <div class="text1h1">午餐</div>
+    <div class="text1p">有各种类型，均衡饮食，早餐吸收率高，营养全面，议一定要吃早餐</div>
+      
+    
+    </div>
+     <div class="breakfastbutton"></div></div></a>
+    
+<a href="foodappreciation.html"> <div class="breakfast">
+    <div class="breakfast3"></div><div class="text1">
+    <div class="text1h1">晚餐</div>
+    <div class="text1p">有各种类型，均衡饮食，早餐吸收率高，营养全面，议一定要吃早餐
+      </div>
+    
+    </div>
+     <div class="breakfastbutton"></div></div></a>
+ <a href="foodappreciation.html"><div class="breakfast">
+    <div class="breakfast4"></div>
+    <div class="text1">
+    <div class="text1h1">宵夜</div>
+    <div class="text1p">有各种类型，均衡饮食，早餐吸收率高，营养全面，议一定要吃早餐
+      </div>
+    
+    </div>
+      <div class="breakfastbutton"></div></div></a>
+</div>
+
+<div class="banner"><img src="image/banner1.png"></div>
+
+
+<div class="sixreason"></div>
+<div class="onebox">
+	<div class="one over">
+    <img src="image/six reason01.png" width="164" height="184"  alt=""/>
+    <div class="one1">
+    <img src="image/sixreason001.png" width="95" height="95"  alt=""/>
+<h1>采用专利蒸饭设备</h1>
+    <p>告别规模小、卫生乱、用料乱、管理差告别重口味不重营养、重卫生、重方便不重品质</p>
+  
+    </div>
+    </div>
+    <div class="oneright over">
+    <img src="image/six reason02.png" width="166" height="183"  alt=""/>
+<div class="one1">
+  <img src="image/sixreason002.png" width="95" height="95"  alt=""/>
+<h1>标准化操作，批量化作业</h1>
+    <p>每一道菜都有精确到“克”的标准配方，全部执行无菌标准化出品</p>
+  
+  </div>
+    </div>
+    <div class="one over">
+    <img src="image/six reason03.png" width="169" height="183"  alt=""/>
+    <div class="one1">
+    <img src="image/sixreason003.png" width="95" height="95"  alt=""/>
+<h1>品种特多，老中少皆宜</h1>
+    <p>对人体有滋润养生功效的中药材和营养辅料，针对季节性，推出不同的营养套餐和单品</p>
+  
+  </div>
+    </div>
+    
+   <div class="oneright over">
+  <img src="image/six reason04.png" width="167" height="185"  alt=""/>
+<div class="one1">
+  <img src="image/sixreason004.png" width="95" height="95"  alt=""/>
+<h1>全程扶持，创富一帆风顺</h1>
+    <p>根据投资预算、城市的商圈及店面的设计要求进行详尽的商圈分析，让加盟的商家赢在起跑线上</p>
+  
+  </div>
+  </div>
+    
+   <div class="one over">
+<img src="image/sixreason05.png" width="166" height="185"  alt=""/>
+<div class="one1">
+  <img src="image/sixreason005.png" width="95" height="95"  alt=""/>
+<h1>制作新鲜无污染</h1>
+    <p>选材上保持食物的第一新鲜度，拒绝一切食品添加剂，全程品质监控</p>
+  
+  </div>
+  </div>
+    
+  <div class="oneright  over">
+  <img src="image/sixreason06.png" width="165" height="184"  alt=""/>
+<div class="one1">
+ <img src="image/sixreason006.png" width="95" height="95"  alt=""/>
+<h1>食物营养不添脂</h1>
+    <p>蛋白质的软化和动物脂肪的分离作用，更利于肠胃的消化吸收降低了脂肪含量</p>
+  
+  </div>
+  </div>
+
+
+	</div>
+</div>
+
+
+<div class="zzyzlbox">
+  <div class="zzyzl ">
+  <div class="hearder2">
+  
+  <div class="hearder3">  <a href="#">资质与专利</a> <p>QUALIFICATION AND PATENT</p></div>
+    <div class="more"><a href="#">MORE >></a></div>
+   
+    </div>
+  </div>
+    <div class="hearderbottom"><img src="image/headerbottom.png" width="1000" height="23"  alt=""/> </div>
+ 
+ 
+   
+    <div class="zzyzl1">
+    <div class="img1"></div> 
+    <div class="img2">
+    <div class="img2d">
+    <a href="#"><img src="image/zzyzl1.png" width="212" height="188"  alt=""/></a>
+    
+    
+ 
+    <a href="#"><img src="image/zzyzl02.png" width="212" height="188"  alt=""/></a>
+    <a href="#"><img src="image/zzyzl03.png" width="212" height="188"  alt=""/></a>
+    <a href="#"><img src="image/zzyzl04.png" width="212" height="188"  alt=""/></a>
+    <a href="#"><img src="image/zzyzl02.png" width="212" height="188"  alt=""/></a>
+      <a href="#"><img src="image/zzyzl03.png" width="212" height="188"  alt=""/></a>
+    
+    
+    
+    </div>
+    </div>
+    <div class="img3"></div>
+    </div>
+</div>
+
+<div class="mdzsbox">
+<div class="zzyzl ">
+  <div class="hearder2">
+  
+  <div class="hearder4">  <a href="#">门店展示</a> <p>THE STORE DISPLAY</p></div>
+    <div class="more"><a href="#">MORE >></a></div>
+   
+    </div>
+  </div>
+    <div class="hearderbottom"><img src="image/headerbottom2.png" width="986" height="12"  alt=""/> </div>
+   
+   
+</div>
+</div>
+    
+  <div class="mdzs over">
+  <div class="mdzs2">
+  <img src="image/mdzs1.png" width="199" height="143"  alt=""/>
+<div class="mdzstext">
+<h1>上海浦东加盟店</h1>
+ <p>秋水快餐让我走上了创业之路，秋水快餐对餐饮品品质的保障算得较老的品牌，而且配备专业的跟踪服务。选择开了自己的几家分店<a href="storedisplay.html">[查看详细]</a></p>
+</div>
+  </div>
+    <div class="mdzs2">
+    <img src="image/mdzs2.png" width="199" height="143"  alt=""/>
+  <div class="mdzstext">
+  <h1>广州天河加盟店</h1>
+ <p>秋水快餐让我走上了创业之路，秋水快餐对餐饮品品质的保障算得较老的品牌，而且配备专业的跟踪服务。选择开了自己的几家分店自己的几家分店<a href="storedisplay.html">[查看详细]</a></p>
+  </div>
+  </div>
+    <div class="mdzs2">
+    <img src="image/mdzs3.png" width="199" height="143"  alt=""/>
+  <div class="mdzstext">
+  <h1>杭州西湖加盟店</h1>
+   <p>秋水快餐让我走上了创业之路，秋水快餐对餐饮品品质的保障算得较老的品牌，而且配备专业的跟踪服务。选择开了自己的几家分店自己的几家分店<a href="storedisplay.html">[查看详细]</a></p>
+  </div>
+  </div>
+    <div class="mdzs2">
+    <img src="image/mdzs4.png" width="199" height="143"  alt=""/>
+  <div class="mdzstext">
+  <h1>深圳福田加盟店</h1>
+   <p>秋水快餐让我走上了创业之路，秋水快餐对餐饮品品质的保障算得较老的品牌，而且配备专业的跟踪服务。选择开了自己的几家分店自己的几家分店<a href="storedisplay.html">[查看详细]</a></p>
+  </div>
+  </div>
+  
+  
+  </div>
+
+
+<div class="banner2">
+<div class="banner2text"><img src="image/banner2text.png" width="670" height="95"  alt=""/></div>
+<img src="image/banner2.png" width="1920" height="200"  alt=""/> </div>
+
+
+
+<div class="aboutusbox">
+
+<div class="zzyzl3 ">
+<div class="zzyzl2 over">
+  <div class="hearder3">
+  <a href="aboutus.html">关于我们</a> <p>ABOUT US</p>
+  <div class="more1"><a href="#">MORE >></a></div>
+  
+    
+   </div>
+    </div>
+    <div class="qyexiangce"><span>企业相册</span>
+    <div class="more2"><a href="#">MORE >></a></div>
+    <img src="image/qiyexiangc.png" width="245" height="13"  alt=""/></div>
+  </div>
+    <div class="hearderbottom"><img src="image/aboutusxian.png" width="684" height="11"  alt=""/> </div>
+  </div>
+   
+
+
+ 
+
+<div class="aboutus over"><div class="aboutusright">
+<img src="image/fenfuduocai.png" width="215" height="171">
+<div class="q1"><p>丰富多彩的休闲活动</p></div>
+<img src="image/移动云员工大会.png" width="215" height="171">
+<div class="q1"><p>员工大会</p></div>
+
+  
+  </div>
+<div class="aboutusleft" >
+<img src="image/SHIPIN.png" width="285" height="208"  alt=""/>
+
+<div class="wenzi ">
+<h2>秋水中式营养快餐</h2>
+<p>&nbsp;&nbsp;秋水中式营养餐饮管理有限公司成立与2014年，秋水快餐作为全国连锁中式自选快餐品牌，在中式快餐业首次提出了连锁餐饮菜品本地化运营的模式，实现了连锁快餐区域化发展，成为中国发展最为迅速的中式连锁快餐</p>
+
+<a href="#">[查看详细]</a>
+</div>
+
+
+
+
+<div class="wenzi2">
+<div class="wenzileft">
+<div class="wenzi2box">
+<a href="#">欢乐节—————中国香菇产业资源整合</a>
+<div class="weizi2boximg"></div> </div>
+
+<div class="wenzi2box">
+<a href="#">新浪39健康大量报道香菇对肝炎癌症保健作用</a>
+<div class="weizi2boximg"></div> </div>
+
+<div class="wenzi2box">
+<a href="#">“古物西峡 健康中华” 大型宣传活动启动</a>
+<div class="weizi2boximg"></div> </div>
+<div class="wenzi2box">
+<a href="#">2013年香菇市场价格形势分析预测</a>
+<div class="weizi2boximg"></div> </div>
+
+</div> 
+<div class="wenziright">
+<div class="wenzi2box">
+<a href="#">“2014年冬西夏香菇腿市场行情价格走势”分析“</a>
+<div class="weizi2boximg"></div> </div>
+
+<div class="wenzi2box">
+<a href="#">2014西峡香菇产业新特点</a>
+<div class="weizi2boximg"></div> </div>
+
+<div class="wenzi2box">
+<a href="#">让西峡香菇香满中国</a>
+<div class="weizi2boximg"></div> </div>
+<div class="wenzi2box">
+<a href="#">加快西峡香菇产业发展的建议</a>
+<div class="weizi2boximg"></div></div>
+
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+ 
+<div class="string2"></div>
+
+<div class="zzyzl3 ">
+<div class="zzyzl2 over">
+  <div class="hearder3">
+  <a href="#">行业新闻</a> <p>INDUSTRY NEWS</p>
+  <div class="more1"><a href="#">MORE >></a></div>
+  
+    
+   </div>
+  </div>
+  <div class="qyexiangce"><span>常见问题</span>
+    <div class="more2"><a href="#">MORE >></a></div>
+    <img src="image/qiyexiangc.png" width="245" height="13"  alt=""/></div>
+    <div class="hearderbottom"><img src="image/aboutusxian.png" width="684" height="11"  alt=""/> </div>
+</div>
+  
+  
+<div class="newbox">
+  <div class="new over">
+  <img src="image/new.png" width="328" height="231"  alt=""/>
+<div class="newtxt"> <a href="informationcenter.html"><p>2004年相思湖的相思水喷涌秋市场分析</p></a> </div>
+<div class="newtxt"> <a href="informationcenter.html"><p>50年相思湖的火腿入选食材</p> </a> </div>
+<div class="newtxt"> <a href="informationcenter.html"><p>今日秋水捐五十万给贫困山区</p> </a> </div>
+<div class="newtxt"> <a href="informationcenter.html"><p>北京友爱集团每年团购食材来自与秋水</p></a>  </div>
+<div class="newtxt"> <a href="informationcenter.html"><p>相思湖学院今日迎来最好时光</p> </a> </div>
+<div class="newtxt"><a href="informationcenter.html"> <p>深圳公司总部引进了澳大利亚牛排原料</p></a> </div>
+</div>
+<div class="newright"><img src="../image/question.png" width="246" height="281"  alt=""/></div>
+</div>
+
+
+<div class="mdzsbox">
+<div class="zzyzl ">
+  <div class="hearder2">
+  
+  <div class="hearder3">  <a href="#">友情链接</a> <p>LINK</p></div>
+    <div class="more"><a href="#">MORE >></a></div>
+   
+    </div>
+  </div>
+  </div>
+    <div class="hearderbottom"><img src="image/headerbottom2.png" width="986" height="12"  alt=""/> </div>
+    <div class="gelogo over">
+    <a href="#"><img src="image/qiaojaignan.png" width="150" height="61"  alt=""/></a>
+    <a href="#"><img src="image/lamian.png" width="150" height="61"  alt=""/></a>
+    <a href="#"><img src="image/nvshen.png" width="150" height="61"  alt=""/></a>
+    <a href="#"><img src="image/baozi.png" width="150" height="61"  alt=""/></a>
+    <a href="#"><img src="image/king.png" width="150" height="61"  alt=""/></a>
+    <a href="#"><img src="image/huoguo.png" width="150" height="61"  alt=""/></a>
+    
+    </div>
+    
+<div class="bottomnavbox">
+
+    	    <div class="bottomnav over">
+             
+             
+            <a href="index.html">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                     <a href="aboutus.html">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="informationcenter.html">资讯中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="storedisplay.html">门店展示</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="investmentcooperation.html">招聘合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="foodappreciation.html">美食欣赏</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="customerservice.html">顾客服务</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="talentrecruitment.html">人力招聘</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="contactus.html">联系我们</a>
+            
+            
+            </div>
+</div>
+            
+    
+            
+<div class="jiaozhu">
+            
+            
+            
+            
+       	<img src="image/logo.png" width="296" height="86"  alt=""/>
+        <div class="xsh over">秋水快餐有限公司</br>
+联系电话：15577163986</br>
+联系地址：相思湖学院247宿舍</br>
+cpyringhy 2015 all rigy Resved</div>
+<div class="twoweima"><img src="image/2weima.png" width="130" height="123"  alt=""/></div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+$(".breakfast").mouseenter(
+
+	 
+ function(){
+	 $(this).children().eq(2).addClass("breakfastbutton2 ")
+		 $(this).children().children().eq(0).addClass(" white")
+	$(this).addClass("breakfast2 ")
+	 $(this).css({padding:5} )   
+	  
+	 
+	 }
+	 
+	 ).mouseleave(
+	 function(){
+		 $(this).children().eq(2).removeClass("breakfastbutton2 ")
+		  $(this).children().children().eq(0).removeClass(" white")
+		 $(this).removeClass("breakfast2 ")
+		 $(this).css({padding:0} )  
+		  }
+		 
+		 )
+		 $(".wenzi2box").mouseenter(
+		 function(){
+			 $(this).addClass("wenzi3box")}).mouseleave(function(){ $(this).removeClass("wenzi3box")})
+			  $(".newtxt").mouseenter(
+		 function(){
+			 $(this).addClass("newtxt1")}).mouseleave(function(){ $(this).removeClass("newtxt1")});
+			 
+			 
+			 
+			var n=0;
+			
+			 $(".img1").click(function(){
+				 if(n>0)
+				 n=n-1;
+				 $(".img2d").animate({marginLeft:-232*n})});
+				 
+				 
+				 $(".img3").click(function(){
+					 if(n<2)
+					 n=n+1;
+				 $(".img2d").animate({marginLeft:-232*n})})
+				 
+				 
+				 
+				 $(".img3").mousedown(function(){ 
+				 
+				 
+				  $(".img3").addClass("zzyzl5")}).mouseup(function(){ $(".img3").removeClass("zzyzl5")})
+				 
+				 $(".img1").mousedown(function(){ 
+				 
+				 
+				  $(".img1").addClass("zzyzl4")}).mouseup(function(){ $(".img1").removeClass("zzyzl4")})
+</script>
+</body>
+</html>

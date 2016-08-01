@@ -1,0 +1,353 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="jquery.js"></script>
+<style>
+
+
+
+*{margin:0px;padding:0px;}
+
+input{margin:0px; padding:0px; height:23px;border:solid 1px #ccc;margin-right:-1px; margin-top:1px; outline:none;}
+.over{overflow:hidden;}
+ul{ list-style:none;}
+a{ text-decoration:none; color:#999; padding:0px; font-family:"微软雅黑"; font-weight:bold; font-size:14px; margin:0px}
+.topbox{ background-color:#FFF;}
+.top{width:1000px; margin:0 auto;}
+.logo{ margin-top:60px;float:left;  }
+
+.smallnav1{
+	
+	color: #999;
+	float:right;
+	margin-top:53px;
+	
+	
+	
+}
+
+.logo2{float:right;margin-top:20px; margin-bottom:27px; clear:right;}
+	
+.topnavbox{ background-color:#ff8900; }
+.topnav{ width:1000px; margin:0 auto; }
+.topnav a{ float:left;  display:block; line-height:50px; padding-left:29px; padding-right:29px; color:white;}
+.topnav a:hover{ background-color:#C44000;}
+
+
+.bannerbox{ height:550px; overflow:hidden; position:relative;
+   border-bottom:solid 2px #ff8900;}
+  .bannerbox .photo{ position:absolute; left:50%; margin-left:-960px; top:50%; top:-600px;border:solid 5px #F60;} 
+ .banner001{
+	width: 1000px;
+	position:relative;
+	margin:0 auto;
+}
+
+
+.bannerright {
+	width: 306px;
+	height: 260px;
+	position: absolute;
+	top: 89px;
+	left: 685px;
+	background-image: url(image/bannerright.png);
+	z-index: 2;
+}
+.bannerright h1{ font-family:"迷你简菱心"; color:#ff8900; margin-left:62px; margin-top:45px;}
+.bannerright ul{margin-left:62px; margin-top:20px; color:#ff5940;  font-family:"微软雅黑"; font-size:14px; font-weight:bold; }
+.bannerright li{margin-top:15px;}
+.bannerright li img{margin-right:5px; padding-left:5px;}
+
+
+.bottomnavbox{ background-color:#ff8900; margin-top:50px; overflow:hidden;}
+.bottomnav{width:1000px; margin:0 auto; color:white; height:40px; text-align:center;}
+.bottomnav a{line-height:40px; color:white; font-family: "微软雅黑";padding-top:20px; padding-bottom:20px;padding-left:8px;
+padding-right:8px;}
+.bottomnav a:active{ background-color:red;}
+.jiaozhu{ width:1000px; margin:0 auto; margin-top:40px; height:150px;}
+.bottomnav a:hover{ background-color:#B05800;}
+
+.jiaozhu img{float:left; margin-top:20px; display:block;}
+.xsh{width:228px; height:106px;float:left;margin-left:70px;line-height:20px; font-family: "微软雅黑"; color:#666;font-size:14px; margin-top:20px;}
+.twoweima{float:right; margin-top:-20px; }
+
+
+
+
+
+.zhongjianbox{width:444px; height:82px; margin:0 auto; margin-top:-41px; position:relative;border:solid 2px #ff8900; background-color:white;}
+
+.zhongjianbox a{ width:120px; height:40px; float:left;margin-left:19px; border:solid 2px #ff8900;margin-top:19px;text-align:center;line-height:40px;color:#999999; font-family:"微软雅黑"; font-size:14px; font-weight:bold; display:block;}
+.zhongjianbox a:active{ background-color:#D94600;}
+.zhongjianbox .cs{  background-color:#ff8900; color:#FFF;}
+
+
+
+
+.zhongjiantxtbox{ width:1000px;  margin:0 auto; overflow:hidden; margin-bottom:10px;margin-top:50px; }
+.khly{ font-size:18px; color:#ff8900; font-weight:bold;}
+.khlyxian{width:1000px; height:1px; background-color:#CCCCCC; margin:16px auto; }
+.liuyanbox{width:998px; height:1150px; border:solid 1px #cccccc; margin:0px auto;}
+.kehu1{width:945px; height:149px; margin:0 auto; margin-top:30px;}
+
+.name{ height:62px;}
+.kehu1 img{ float:left; display:block;}
+.name h1{font-size:14px; color:#ff8900; font-weight:bold; float:left;display:block; margin-left:10px; margin-top:1px; font-family:"微软雅黑";}
+
+.name p{font-size:14px; margin:0px; padding:0px; float:left; color:#808080; margin-left:10px;  margin-top:14px;font-family:"微软雅黑"; }
+
+.qiushui{ height:32px; width:944px; background-color:#f5f5f5;font-size:14px; color:#ff8900; font-weight:bold;font-family:"微软雅黑"; float:left; background-image:url(image/neifag.png); border:solid 1px #ccc; line-height:32px; margin-top:15px;}
+.qiushui2{ height:32px;width:944px;float:left; background-image:url(image/nfg.png); border:solid 1px #ccc;line-height:32px; margin-top:-1px;}
+.qiushui p{ margin-left:10px;}
+.qiushui2 p{ font-size:12px; color:#808080; font-family:"微软雅黑"; margin-left:10px;}
+
+
+.biaodan{width:350px; height:353px; float:left;font-size:12px; color:#808080; font-family:"微软雅黑"; margin-left:26px; font-weight:bold;margin-top:62px;}
+.xinming{ margin-top:5px;}
+.xinming p{ margin:0px; padding:0px; float:left;}
+.xinming img{ vertical-align:middle; margin-left:10px;}
+
+.button{ width:100px;}
+
+
+
+
+.xuanxiangbox1{width:1000px; margin:0 auto; overflow:hidden;}
+ .xuanxiangbox{ width:190px; height:27px; margin:0 auto; margin-top:130px}
+ .xuanxiang a{ border:solid 2px #CCCCCC; width:27px; height:27px; float:left; margin-left:6px; text-align:center; line-height:27px;}
+  .xuanxiangjt a{ border:solid 2px #CCCCCC; width:27px; height:27px; float:left; margin-left:6px; text-align:center; line-height:27px; background-color:#333;}
+  
+.xuanxiangjt a:hover{ background-color:#F63;}
+.xuanxiang a:hover{ background-color:#F63; color:white;}
+
+</style>
+
+</head>
+
+<body onLoad="MM_preloadImages('image/yellow point.png')">
+
+<div class="topbox">
+	<div class="top over">
+	<div class="logo"><img src="image/logo.png" width="296" height="86"  alt=""/></div>
+    <div class="smallnav1">
+    <a href="#">设为首页</a>&nbsp;|
+    <a href="#">收藏本站</a>&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+    <a href="#">中文</a>&nbsp;|
+    <a href="#">英文</a></div>
+    
+    <div class="logo2"><img src="image/phone.png" width="247" height="58"  alt=""/></div>
+    
+    
+    </div>
+</div>
+<div class="topnavbox">
+	<div class="topnav over">
+    	 <a href="index.html">首页</a>
+          <a href="aboutus.html">关于我们</a>
+            <a href="informationcenter.html">资讯中心</a>
+            <a href="storedisplay.html">门店展示</a>
+            <a href="investmentcooperation.html">招聘合作</a>
+            <a href="foodappreciation.html">美食欣赏</a>
+            <a style="background-color:#C44000;"href="customerservice.html">顾客服务</a>
+            <a href="talentrecruitment.html">人力招聘</a>
+            <a href="contactus.html">联系我们</a>
+  </div>           
+</div>
+
+<div class="bannerbox">
+<div class="point">
+<a href="#" class="yellow"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','image/yellow point.png',1)"><img src="image/point.png" alt="" width="25" height="25" id="Image10"></a>
+<a href="#"><img src="image/point.png" width="25" height="25"  alt=""/></a>
+<a href="#"><img src="image/point.png" width="25" height="25"  alt=""/></a>
+</div>
+<div class="banner001">
+<div class="bannerright">
+<h1>顾客服务</h1><ul>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>不断的努力创造新的菜式</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>安全好吃的保障</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>诱惑力的菜肴</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>努力向上的年轻团队</li>
+</ul></div>
+</div>
+
+<div class="photo"><img src="image/2228446efdwuz686idf7uc.jpg" width="1920" height="1200"  alt=""/></div>
+</div>
+</div>
+
+
+
+
+<div class="zhongjianbox">
+
+<a  href="customerservice.html">服务承诺</a>
+<a  href="customerservice - question.html">常见问题</a>
+<a style="color:white; background-color:#ff8900;"href="#">在线留言</a>
+
+</div>
+
+
+
+<div class="zhongjiantxtbox">
+
+
+
+<div class="liuyanbox">
+
+<div class="kehu1">
+<div class="name">
+<img src="image/meinv1.png" width="64" height="64"  alt=""/>
+<h1>百合5566:</h1></br>
+<p>你好，请问一下深圳你们公司的地址在哪里？我想过去观看一下~</p>
+</div>
+<div class="qiushui"><p>秋水快餐：</p></div>
+<div class="qiushui2"><p>我公司的地址是“深圳市罗湖区步心太白路1038号2楼”欢迎来我公司品尝！！</p></div>
+
+
+
+</div>
+
+
+
+
+<div class="kehu1">
+<div class="name">
+<img src="image/meinv2.png" width="64" height="64"  alt=""/>
+<h1>大王叫我来巡山咯：:</h1></br>
+<p>你好，我想了解下最新的行业价格,可以发份价格表给我吗？？谢谢！</p>
+</div>
+<div class="qiushui"><p>秋水快餐：</p></div>
+<div class="qiushui2"><p>好的，最近的行业价格有所变化，我们已经把最新的价格表发至您的邮箱，请查收；同时，感谢您对我公司网站的关注，我们竭诚欢迎您来我公司实地考察！</p></div>
+
+
+
+</div>
+
+
+
+
+
+<div class="kehu1">
+<div class="name">
+<img src="image/meinv3.png" width="64" height="64"  alt=""/>
+<h1>香水有毒:</h1></br>
+<p>你好，我想了解下j加盟要需要多少资金？</p>
+</div>
+<div class="qiushui"><p>秋水快餐：</p></div>
+<div class="qiushui2"><p>我们加盟的资金一般视情况而定，一般在12——17万左右，详情了解联系我们吧。品尝！！</p></div>
+</div>
+
+
+<div class="xuanxiangbox1">
+<div class="xuanxiangbox">   
+  <div class="xuanxiangjt"><a href="#"><img src="image/qiehuanjiantleft.png" width="8" height="8"  alt=""/></a></div>
+	<div class="xuanxiang"><a href="#">1</a></div>
+    <div class="xuanxiang"><a href="#">2</a></div>
+    <div class="xuanxiang"><a href="#">3</a></div>
+ 
+  <div class="xuanxiangjt"><a href="#"><img src="image/qiehuanjiantouright.png" width="8" height="8"  alt=""/></a></div>
+	
+</div>
+</div>
+
+
+<div class="biaodan">
+<div class="xinming">姓名：<input></div>
+<div class="xinming">电话：<input style="width:200px;"></div>
+<div class="xinming">邮箱：<input style="width:300px;"></div>
+<div class="xinming"><p>留言：</p><textarea  style="width:300px; height:212px; outline:none; float:left;"></textarea></div>
+<div style="margin-left:-11px; " class="xinming "><p style="margin-top:10px;">验证码：</p><input style="margin-top:10px;"><img src="image/yzm.png" width="35" height="14"  alt=""/> <button class="button"  style="width:50px; height:25px; margin-left:10px; vertical-align:middle;">提交</button></div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bottomnavbox">
+
+    	    <div class="bottomnav over">
+             
+            <a href="index.html">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="informationcenter.html">资讯中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="storedisplay.html">门店展示</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="investmentcooperation.html">招聘合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="foodappreciation.html">美食欣赏</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a  href="customerservice.html">顾客服务</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="talentrecruitment.html">人力招聘</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="contactus.html">联系我们</a>
+            
+            
+            </div>
+</div>
+            
+    
+            
+            <div class="jiaozhu">
+            
+            
+            
+            
+       	<img src="image/logo.png" width="296" height="86"  alt=""/>
+        <div class="xsh over">秋水快餐有限公司</br>
+联系电话：15577163986</br>
+联系地址：相思湖学院247宿舍</br>
+cpyringhy 2015 all rigy Resved</div>
+<div class="twoweima"><img src="image/2weima.png" width="130" height="123"  alt=""/></div>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+<script>
+
+	 
+	 $(".zhongjianbox a").mouseenter(
+	 function(){ 
+	$(this).addClass("cs").siblings().removeClass("cs")
+	 })
+	 $(".zhongjianbox a").mouseleave(function(){
+		 $(this).removeClass("cs") })
+		 
+	  	 $(".zhongjianbox a").click(
+		 
+		  function(){ 
+	$(this).addClass("cs")
+	 });
+	 
+	  $(".gkcn div").mouseenter(
+	 function(){ 
+	$(this).css({marginTop:10}).mouseleave(function(){
+	$(this).css({marginTop:0})	})
+	 })
+	$(".button").click( function(){ alert("该功能还在开发中")})
+</script>
+</body>
+</html>

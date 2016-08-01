@@ -1,0 +1,357 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="jquery.js"></script>
+<style>
+
+/**/
+
+*{margin:0px;padding:0px;}
+
+input{margin:0px; padding:0px; height:23px;border:solid 1px #ccc;margin-right:-1px; margin-top:1px; outline:none;}
+.over{overflow:hidden;}
+ul{ list-style:none;}
+a{ text-decoration:none; color:#999; padding:0px; font-family:"微软雅黑"; font-weight:bold; font-size:14px; margin:0px}
+.topbox{ background-color:#FFF;}
+.top{width:1000px; margin:0 auto;}
+.logo{ margin-top:60px;float:left;  }
+
+.smallnav1{
+	
+	color: #999;
+	float:right;
+	margin-top:53px;
+	
+	
+	
+}
+
+.logo2{float:right;margin-top:20px; margin-bottom:27px; clear:right;}
+	
+.topnavbox{ background-color:#ff8900; }
+.topnav{ width:1000px; margin:0 auto; }
+.topnav a{ float:left;  display:block; line-height:50px; padding-left:29px; padding-right:29px; color:white;}
+.topnav a:hover{ background-color:#C44000;}
+
+.bannerbox{ height:550px; overflow:hidden; position:relative;
+   border-bottom:solid 2px #ff8900;}
+  .bannerbox .photo{ position:absolute; left:50%; margin-left:-960px; top:50%; top:-200px;border:solid 5px #F60;} 
+ .banner001{
+	width: 1000px;
+	position:relative;
+	margin:0 auto;
+}
+
+
+.bannerright {
+	width: 306px;
+	height: 260px;
+	position: absolute;
+	top: 89px;
+	left: 685px;
+	background-image: url(image/bannerright.png);
+	z-index: 2;
+}
+.bannerright h1{ font-family:"迷你简菱心"; color:#ff8900; margin-left:62px; margin-top:45px;}
+.bannerright ul{margin-left:62px; margin-top:20px; color:#ff5940;  font-family:"微软雅黑"; font-size:10px; font-weight:bold;}
+.bannerright li{margin-top:19px;}
+.bannerright li img{margin-right:5px; padding-left:5px;}
+
+
+.bottomnavbox{ background-color:#ff8900; margin-top:50px;}
+.bottomnav{width:1000px; margin:0 auto; color:white; height:40px; text-align:center;}
+.bottomnav a{line-height:40px; color:white; font-family: "微软雅黑";padding-top:20px; padding-bottom:20px;padding-left:8px;
+padding-right:8px;}
+.jiaozhu{ width:1000px; margin:0 auto; margin-top:40px; height:150px;}
+.bottomnav a:hover{ background-color:#B05800;}
+.jiaozhu img{float:left; margin-top:20px; display:block;}
+.xsh{width:228px; height:106px;float:left;margin-left:70px;line-height:20px; font-family: "微软雅黑"; color:#666;font-size:14px; margin-top:20px; }
+.twoweima{float:right; margin-top:-20px; }
+
+
+
+
+
+.zhongjianbox{width:444px; height:82px; margin:0 auto; margin-top:-41px; position:relative;border:solid 2px #ff8900; background-color:white;}
+
+.zhongjianbox a{ width:120px; height:40px; float:left;margin-left:19px; border:solid 2px #ff8900;margin-top:19px;text-align:center;line-height:40px;color:#999999; font-family:"微软雅黑"; font-size:14px; font-weight:bold; display:block;}
+.zhongjianbox a:active{ background-color:#D94600;}
+
+
+
+
+.zhongjianbox .cs{  background-color:#ff8900; color:#FFF;}
+.xiaolibox{width:1000px; margin:0 auto; height:328px; margin-top:87px;}
+.new{width:1000px; margin:0 auto;}
+.xiaolitext {width:542px; height:299px; float:right;font-size:16px;font-family:"微软雅黑"; color:#808080;line-height:30px;}
+.xiaolitext h1{ font-size:26px;font-family:"微软雅黑";color:#4e4e4e; font-weight:bold;}
+.xiaolitext p{font-size:12px;font-family:"微软雅黑"; color:#808080; margin-top:10px; margin-bottom:10px;}
+.xiaoliimg{ float:left;border:solid 5px #ff8900; margin-left:80px; margin-top:10px;}
+.xiaolitext img{display:block; float:right;margin-top:45px;margin-right:20px; border:solid 8px #ff8900;}
+.news2box{ width:1000px; margin:0 auto; margin-top:50px;}
+.news2{width:1000px; height:152px;}
+.shiba{width:78px; height:82px;; background-image:url(image/18ri.png); float:left;margin-top:20px;}
+.riqi{ line-height:28px; text-align:center; color:white;font-weight:bold;}
+.rizi{ line-height:53px; text-align:center; color:white; font-size:30px; font-weight:bold;}
+.newstxt h1{ font-family:"微软雅黑"; font-size:27px;color: #333; font-weight:bold;margin:0px; padding:0px;margin-bottom:23px;} 
+.newstxt{font-family:"微软雅黑"; font-size:14px;color:#999;float:right; width:869px; height:153px;}
+
+
+.newstxt a{ background-color: #666; width:65px; height:11px; float:right; margin-top:40px; margin-right:20px; background-image:url(image/redymore2.png);}
+.xiaolitext a{ background-color: #666; width:65px; height:11px; float:right; margin-top:40px; margin-right:20px; background-image:url(image/redymore2.png);}
+ .newstxt a:hover{ background-image:url(image/redymore.png);}
+ .xiaolitext a:hover{ background-image:url(image/redymore.png);}
+ .xuanxiangbox{ width:190px; height:27px; margin:0 auto; margin-top:150px}
+ .xuanxiang a{ border:solid 2px #CCCCCC; width:27px; height:27px; float:left; margin-left:6px; text-align:center; line-height:27px;}
+  .xuanxiangjt a{ border:solid 2px #CCCCCC; width:27px; height:27px; float:left; margin-left:6px; text-align:center; line-height:27px; background-color:#333;}
+  
+.xuanxiangjt a:hover{ background-color:#F63;}
+.xuanxiang a:hover{ background-color:#F63; color:white}
+</style>
+
+</head>
+
+<body onLoad="MM_preloadImages('image/yellow point.png')">
+
+<div class="topbox">
+	<div class="top over">
+	<div class="logo"><img src="image/logo.png" width="296" height="86"  alt=""/></div>
+    <div class="smallnav1">
+    <a href="#">设为首页</a>&nbsp;|
+    <a href="#">收藏本站</a>&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+    <a href="#">中文</a>&nbsp;|
+    <a href="#">英文</a></div>
+    
+    <div class="logo2"><img src="image/phone.png" width="247" height="58"  alt=""/></div>
+    
+    
+    </div>
+</div>
+<div class="topnavbox">
+	<div class="topnav over">
+    	 <a href="index.html">首页</a>
+          <a href="aboutus.html">关于我们</a>
+            <a style="background-color:#C44000;"href="informationcenter.html">资讯中心</a>
+            <a href="storedisplay.html">门店展示</a>
+            <a href="investmentcooperation.html">招聘合作</a>
+            <a href="foodappreciation.html">美食欣赏</a>
+            <a href="customerservice.html">顾客服务</a>
+            <a href="talentrecruitment.html">人力招聘</a>
+            <a href="contactus.html">联系我们</a>
+  </div>           
+</div>
+
+<div class="bannerbox">
+<div class="point">
+<a href="#" class="yellow"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','image/yellow point.png',1)"><img src="image/point.png" alt="" width="25" height="25" id="Image10"></a>
+<a href="#"><img src="image/point.png" width="25" height="25"  alt=""/></a>
+<a href="#"><img src="image/point.png" width="25" height="25"  alt=""/></a>
+</div>
+<div class="banner001">
+<div class="bannerright">
+<h1>资讯中心</h1><ul>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>不断的努力创造新的菜式</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>安全好吃的保障</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>诱惑力的菜肴</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>努力向上的年轻团队</li>
+</ul></div>
+</div>
+
+<div class="photo"> <img src="image/79bae63cd9bec69e9e3924cc7eae0cd0.jpg" width="1920" height="1200"  alt=""/> </div>
+</div>
+</div>
+
+
+
+
+<div class="zhongjianbox">
+
+<a href="informationcenter.html">公司新闻</a>
+<a style=" background-color:#ff8900; color:white;" href="#">行业新闻</a>
+<a href="informationcenter - meitibaodao.html">媒体报道</a>
+
+
+</div>
+<div class="new">
+<div class="xiaolibox ">
+
+<div class="xiaoliimg"><img src="image/HANYE.jpg" width="284" height="217"  alt=""/></div>
+<div class="xiaolitext">
+<h1>快餐行业的趋势</h1>
+
+<p>2014-11-18</p>
+
+
+北京的小李快餐式一个地道的快餐饮,已经开店了20余年，在当地有着很好的名气，每天的客流量几乎爆满，各种招牌菜和小吃已成为那地段人们喜欢吃的几道主流菜，估计再过几十年就可以连续被多开几家连锁店推广。
+
+<a href="#"><div class="ready"></div></a> </div>
+</div>
+
+</div>
+
+
+<div class="news2box">
+ 	<div class="news2">
+<a href="#"><div class="shiba">
+<div class="riqi">2014-11</div>
+<div class="rizi">18日</div>
+
+</div></a>
+<div class="newstxt">
+      <h1>50年相思湖的火腿入选食材</h1>
+      从今日起，啊卡健康健康的八九点吧可拨打白色的卡巴斯基abs健康大坝建设北大街卡机把大量基本的了解absdj阿薄收到了渐变好伐啦是个法拉盛奥斯卡积分伽师瓜拉上管理大发光火阿什利发动机哈市的礼服哈市了肯定和法律 i啊哈哈是拉升的拉升的拉黑是的哈手榴弹和拉受得了安良机电阿斯兰的<a href="#"><div class="ready"></div></a>
+        </div>
+     </div>
+</div>
+
+
+<div class="news2box">
+ 	<div class="news2">
+<a href="#"><div class="shiba">
+<div class="riqi">2014-11</div>
+<div class="rizi">17日</div>
+
+</div></a>
+<div class="newstxt">
+      <h1>今日秋水捐五十万给贫困山区</h1>
+      从今日起，啊卡健康健康的八九点吧可拨打白色的卡巴斯基abs健康大坝建设北大街卡机把大量基本的了解absdj阿薄收到了渐变好伐啦是个法拉盛奥斯卡积分伽师瓜拉上管理大发光火阿什利发动机哈市的礼服哈市了肯定和法律 i啊哈哈是拉升的拉升的拉黑是的哈手榴弹和拉受得了安良机电阿斯兰的<a href="#"><div class="ready"></div></a>
+        </div>
+     </div>
+</div>
+
+
+
+
+<div class="news2box">
+ 	<div class="news2">
+<a href="#"><div class="shiba">
+<div class="riqi">2014-11</div>
+<div class="rizi">16日</div>
+
+</div></a>
+<div class="newstxt">
+      <h1>北京友爱集团每年团购食材来自与秋水</h1>
+      从今日起，啊卡健康健康的八九点吧可拨打白色的卡巴斯基abs健康大坝建设北大街卡机把大量基本的了解absdj阿薄收到了渐变好伐啦是个法拉盛奥斯卡积分伽师瓜拉上管理大发光火阿什利发动机哈市的礼服哈市了肯定和法律 i啊哈哈是拉升的拉升的拉黑是的哈手榴弹和拉受得了安良机电阿斯兰的<a href="#"><div class="ready"></div></a>
+        </div>
+     </div>
+</div>
+
+
+
+
+<div class="news2box">
+ 	<div class="news2">
+<a href="#"><div class="shiba">
+<div class="riqi">2014-11</div>
+<div class="rizi">15日</div>
+
+</div></a>
+<div class="newstxt">
+      <h1>相思湖学院今日迎来最好时光</h1>
+      从今日起，啊卡健康健康的八九点吧可拨打白色的卡巴斯基abs健康大坝建设北大街卡机把大量基本的了解absdj阿薄收到了渐变好伐啦是个法拉盛奥斯卡积分伽师瓜拉上管理大发光火阿什利发动机哈市的礼服哈市了肯定和法律 i啊哈哈是拉升的拉升的拉黑是的哈手榴弹和拉受得了安良机电阿斯兰的<a href="#"><div class="ready"></div></a>
+        </div>
+     </div>
+</div>
+
+
+
+
+<div class="xuanxiangbox">   
+<div class="xuanxiangjt"><a href="#"><img src="image/qiehuanjiantleft.png" width="8" height="8"  alt=""/></a></div>
+	<div class="xuanxiang"><a href="#">1</a></div>
+    <div class="xuanxiang"><a href="#">2</a></div>
+    <div class="xuanxiang"><a href="#">3</a></div>
+ 
+  <div class="xuanxiangjt"><a href="#"><img src="image/qiehuanjiantouright.png" width="8" height="8"  alt=""/></a></div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bottomnavbox">
+
+    	    <div class="bottomnav over">
+             
+             
+            <a href="index.html">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                     <a href="aboutus.html">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="informationcenter.html">资讯中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="storedisplay.html">门店展示</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="investmentcooperation.html">招聘合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="foodappreciation.html">美食欣赏</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="customerservice.html">顾客服务</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="talentrecruitment.html">人力招聘</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="contactus.html">联系我们</a>
+            
+            
+            </div>
+</div>
+            
+    
+            
+            <div class="jiaozhu">
+            
+            
+            
+            
+       	<img src="image/logo.png" width="296" height="86"  alt=""/>
+        <div class="xsh over">秋水快餐有限公司</br>
+联系电话：15577163986</br>
+联系地址：相思湖学院247宿舍</br>
+cpyringhy 2015 all rigy Resved</div>
+<div class="twoweima"><img src="image/2weima.png" width="130" height="123"  alt=""/></div>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+<script>
+ $(".shiba").mouseenter(
+ function(){
+	 
+	 
+	 $(".shiba").stop(true)
+	 $(this).css({marginTop:10})}).mouseleave( function(){
+	 $(this).css({marginTop:20})})
+	 
+	 
+	 	 $(".zhongjianbox a").mouseenter(
+	 function(){ 
+	$(this).addClass("cs").siblings().removeClass("cs")
+	 })
+	 $(".zhongjianbox a").mouseleave(function(){
+		 $(this).removeClass("cs") })
+		 
+	  	 $(".zhongjianbox a").click(
+		 
+		  function(){ 
+	$(this).addClass("cs")
+	 })
+</script>
+</body>
+</html>

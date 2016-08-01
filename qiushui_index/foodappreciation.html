@@ -1,0 +1,318 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="jquery.js"></script>
+<style>
+
+/**/
+
+*{margin:0px;padding:0px;}
+
+input{margin:0px; padding:0px; height:23px;border:solid 1px #ccc;margin-right:-1px; margin-top:1px; outline:none;}
+.over{overflow:hidden;}
+ul{ list-style:none;}
+a{ text-decoration:none; color:#999; padding:0px; font-family:"微软雅黑"; font-weight:bold; font-size:14px; margin:0px}
+.topbox{ background-color:#FFF;}
+.top{width:1000px; margin:0 auto;}
+.logo{ margin-top:60px;float:left;  }
+
+.smallnav1{
+	
+	color: #999;
+	float:right;
+	margin-top:53px;
+	
+	
+	
+}
+
+.logo2{float:right;margin-top:20px; margin-bottom:27px; clear:right;}
+	
+.topnavbox{ background-color:#ff8900; }
+.topnav{ width:1000px; margin:0 auto; }
+.topnav a{ float:left;  display:block; line-height:50px; padding-left:29px; padding-right:29px; color:white;}
+.topnav a:hover{ background-color:#C44000;}
+
+.bannerbox{ height:500px; overflow:hidden; position:relative;
+   border-bottom:solid 2px #ff8900;}
+  .bannerbox .photo{ position:absolute; left:50%; margin-left:-960px; top:50%; top:-300px;border:solid 5px #F60;} 
+ .banner001{
+	width: 1000px;
+	position:relative;
+	margin:0 auto;
+}
+
+
+.bannerright {
+	width: 306px;
+	height: 260px;
+	position: absolute;
+	top: 89px;
+	left: 685px;
+	background-image: url(image/bannerright.png);
+	z-index: 2;
+}
+.bannerright h1{ font-family:"迷你简菱心"; color:#ff8900; margin-left:62px; margin-top:45px;}
+.bannerright ul{margin-left:62px; margin-top:20px; color:#ff5940;  font-family:"微软雅黑"; font-size:10px; font-weight:bold;}
+.bannerright li{margin-top:19px;}
+.bannerright li img{margin-right:5px; padding-left:5px;}
+
+
+.bottomnavbox{ background-color:#ff8900; margin-top:50px;}
+.bottomnav{width:1000px; margin:0 auto; color:white; height:40px; text-align:center;}
+.bottomnav a{line-height:40px; color:white; font-family: "微软雅黑";padding-top:20px; padding-bottom:20px;padding-left:8px;
+padding-right:8px;}
+.jiaozhu{ width:1000px; margin:0 auto; margin-top:40px; height:150px;}
+.bottomnav a:hover{ background-color:#B05800;}
+
+.jiaozhu img{float:left; margin-top:20px; display:block;}
+.xsh{width:228px; height:106px;float:left;margin-left:70px;line-height:20px; font-family: "微软雅黑"; color:#666;font-size:14px; margin-top:20px;}
+.twoweima{float:right; margin-top:-20px; }
+
+
+
+
+
+.zhongjianbox{width:305px; height:82px; margin:0 auto; margin-top:-41px; position:relative;border:solid 2px #ff8900; background-color:white;}
+
+.zhongjianbox a{ width:120px; height:40px; float:left;margin-left:19px; border:solid 2px #ff8900;margin-top:19px;text-align:center;line-height:40px;color:#999999; font-family:"微软雅黑"; font-size:14px; font-weight:bold; display:block;}
+.zhongjianbox a:active{ background-color:#D94600;}
+ .cs{  background-color:#ff8900; color:#FFF; }
+.white{ color:white;}
+
+
+
+
+
+
+
+
+
+
+
+
+.zhongjiantxtbox{ width:1000px;  margin:0 auto; overflow:hidden;margin-top:90px; margin-bottom:10px; }
+
+.zhongjian1{ width:1000px; height:256px; margin-top:35px; overflow:hidden;}
+.smallbox{width:220px; height:212px; float:left;margin-left:38px;}
+ .one{ background-color:#ff8900;margin:0px;}
+.two{background-color:#87b751;margin:0px;}
+ .three{float:right; margin:0px; }
+
+.smallbox h1{ font-family:"微软雅黑"; font-size:25px; color:white; text-align:center; margin-top:30px; margin-bottom:30px; }
+.smallbox p{font-family:"微软雅黑"; font-size:12px; color:white; display:block; width:182px; height:37px; margin:0 auto;line-height:22px;}
+
+.zhongsmallbox{ border: solid 1px #CCCCCC;}
+
+.smallboxh2{ font-family:"微软雅黑"; font-size:14px;text-align:center; margin-top:10px;}
+.smallbox img{ display:block;margin:0 auto;margin-top:6px;}
+
+
+
+
+
+
+
+.xuanxiangbox1{width:1000px; margin:0 auto; overflow:hidden;}
+ .xuanxiangbox{ width:190px; height:27px; margin:0 auto; margin-top:30px}
+ .xuanxiang a{ border:solid 2px #CCCCCC; width:27px; height:27px; float:left; margin-left:6px; text-align:center; line-height:27px;}
+  .xuanxiangjt a{ border:solid 2px #CCCCCC; width:27px; height:27px; float:left; margin-left:6px; text-align:center; line-height:27px; background-color:#333;}
+  
+.xuanxiangjt a:hover{ background-color:#F63;}
+.xuanxiang a:hover{ background-color:#F63; color:white;}
+
+
+</style>
+
+</head>
+
+<body onLoad="MM_preloadImages('image/yellow point.png')">
+
+<div class="topbox">
+	<div class="top over">
+	<div class="logo"><img src="image/logo.png" width="296" height="86"  alt=""/></div>
+    <div class="smallnav1">
+    <a href="#">设为首页</a>&nbsp;|
+    <a href="#">收藏本站</a>&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
+    <a href="#">中文</a>&nbsp;|
+    <a href="#">英文</a></div>
+    
+    <div class="logo2"><img src="image/phone.png" width="247" height="58"  alt=""/></div>
+    
+    
+    </div>
+</div>
+<div class="topnavbox">
+	<div class="topnav over">
+    		 <a href="index.html">首页</a>
+              <a href="aboutus.html">关于我们</a>
+            <a href="informationcenter.html">资讯中心</a>
+            <a href="storedisplay.html">门店展示</a>
+            <a href="investmentcooperation.html">招聘合作</a>
+            <a style="background-color:#C44000;"href="foodappreciation.html">美食欣赏</a>
+            <a href="customerservice.html">顾客服务</a>
+            <a href="talentrecruitment.html">人力招聘</a>
+            <a href="contactus.html">联系我们</a>
+  </div>           
+</div>
+
+<div class="bannerbox">
+<div class="point">
+<a href="#" class="yellow"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','image/yellow point.png',1)"><img src="image/point.png" alt="" width="25" height="25" id="Image10"></a>
+<a href="#"><img src="image/point.png" width="25" height="25"  alt=""/></a>
+<a href="#"><img src="image/point.png" width="25" height="25"  alt=""/></a>
+</div>
+<div class="banner001">
+<div class="bannerright">
+<h1>美食欣赏</h1><ul>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>制作新鲜无污染</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>天然的鲜香味道</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>安全有保障</li>
+<li><img src="image/little point.png" width="8" height="7"  alt=""/>营养丰富</li>
+</ul></div>
+</div>
+
+<div class="photo"><img src="image/53c8d35d1000f.jpg" width="1920" height="1080"  alt=""/></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="zhongjiantxtbox">
+<div class="zhongjian1">
+<div class="smallbox" style=" background-color:#ff8900; margin:0;"><h1>营养早餐</h1><p>有丰富的品种类型，均衡饮食，营养全面，早餐摄入吸收率最高。</p></div>
+<a href="#"><div class="smallbox zhongsmallbox"><img src="image/xlztr.png" width="220" height="170"  alt=""/>
+  <div class="smallboxh2">香辣猪头肉</div></div></a>
+<a href="#"><div class="smallbox zhongsmallbox"><img src="image/jianjiao.png" width="220" height="170"  alt=""/>
+  <div class="smallboxh2">美味煎饺</div></div></a>
+<a href="#"><div class="smallbox three zhongsmallbox"><img src="image/qshy.png" width="220" height="170"  alt=""/>
+  <div class="smallboxh2">清爽鱿鱼</div></div></a>
+</div>
+
+<div class="zhongjian1">
+<div class="smallbox " style=" background-color:#87b751;margin:0;"><h1>超值午餐</h1><p>科学的午餐，拆料丰富，吃得科学吃得健康有利于身体健康、长寿</p></div>
+<a href="#"><div class="smallbox zhongsmallbox"><img src="image/qjnr.png" width="220" height="170"  alt=""/>
+  <div class="smallboxh2">青椒牛肉</div>
+</div></a>
+<a href="#"><div class="smallbox zhongsmallbox"><img src="image/bczr.png" width="220" height="170"  alt=""/>
+  <div class="smallboxh2">爆炒猪肉</div></div></a>
+<a href="#"><div class="smallbox three zhongsmallbox"><img src="image/chunsexiaoc.png" width="220" height="170"  alt=""/> <div class="smallboxh2">春色小炒</div></div></a></div>
+
+<div class="zhongjian1">
+<div class="smallbox " style=" background-color:#ff8900;margin:0;"><h1>美味晚餐</h1><p>适应广大群众的口味，制作简便品种多样，有家常菜也有小饭馆经营的特色菜</p></div>
+<a href="#"><div class="smallbox zhongsmallbox"><img src="image/gdbqj.png" width="220" height="170"  alt=""/>
+  <div class="smallboxh2">白切鸡</div></div></a>
+<a href="#"><div class="smallbox zhongsmallbox"><img src="image/dpr.png" width="220" height="170"  alt=""/>
+  <div class="smallboxh2">东坡肉</div></div></a>
+<a href="#"><div class="smallbox three zhongsmallbox"><img src="image/kljc.png" width="220" height="170"  alt=""/>
+  <div class="smallboxh2">可乐鸡翅</div></div></a></div>
+
+
+<div class="zhongjian1">
+<div class="smallbox " style=" background-color:#87b751;margin:0;"><h1>可口夜宵</h1><p>夜宵形式多样，多做美味佳肴。合理、健康的夜宵可以帮助恢复体力和精力</p></div>
+<a href="#"><div class="smallbox zhongsmallbox" ><img src="image/tcyk.png" width="220" height="170"  alt=""/>
+  <div class="smallboxh2">糖醋鱼块</div></div></a>
+<a href="#"><div class="smallbox zhongsmallbox"><img src="image/xghs.png" width="220" height="170"  alt=""/>
+  <div class="smallboxh2">莴笋滑菇</div></div></a>
+<a href="#"><div class="smallbox three zhongsmallbox"><img src="image/dzx.png" width="220" height="170"  alt=""/>
+  <div class="smallboxh2">大闸蟹</div></div></a>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!--<div class="xuanxiangbox1">
+<div class="xuanxiangbox">   
+  <div class="xuanxiangjt"><a href="#"><img src="image/qiehuanjiantleft.png" width="8" height="8"  alt=""/></a></div>
+	<div class="xuanxiang"><a href="#">1</a></div>
+    <div class="xuanxiang"><a href="#">2</a></div>
+    <div class="xuanxiang"><a href="#">3</a></div>
+ 
+  <div class="xuanxiangjt"><a href="#"><img src="image/qiehuanjiantouright.png" width="8" height="8"  alt=""/></a></div>
+	
+</div>
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bottomnavbox">
+
+    	    <div class="bottomnav over">
+            
+             
+            <a href="index.html">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                     <a href="aboutus.html">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="informationcenter.html">资讯中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="storedisplay.html">门店展示</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="investmentcooperation.html">招聘合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="foodappreciation.html">美食欣赏</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="customerservice.html">顾客服务</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="talentrecruitment.html">人力招聘</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="contactus.html">联系我们</a>
+            </div>
+</div>
+            
+    
+            
+            <div class="jiaozhu">
+            
+            
+            
+            
+       	<img src="image/logo.png" width="296" height="86"  alt=""/>
+        <div class="xsh over">秋水快餐有限公司</br>
+联系电话：15577163986</br>
+联系地址：相思湖学院247宿舍</br>
+cpyringhy 2015 all rigy Resved</div>
+<div class="twoweima"><img src="image/2weima.png" width="130" height="123"  alt=""/></div>
+</div>
+
+ 
+
+
+
+
+
+
+
+
+<script>
+
+	 
+
+
+</script>
+</body>
+</html>
